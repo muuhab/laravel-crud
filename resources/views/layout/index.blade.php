@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite('resources/css/app.css')
 
-    <title>Laravel</title>
+    <title>BakerDev</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -13,8 +15,13 @@
 
 </head>
 
-<body class="">
-    <h2>Hello</h2>
+<body class="h-full">
+    <x-navbar />
+    @yield('content')
+    <x-flash-message />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
 </body>
 
 </html>
